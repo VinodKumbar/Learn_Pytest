@@ -1,0 +1,25 @@
+What is Framework ?
+Skeleton or structure that helps to builds Automation Test Cases.
+
+What is Pytest ?
+It is a powerful and flexible testing framework that allows you to write simple and scalable test cases
+for your Python code.
+
+=> Run Tests, manage setup, generate reports, and more.
+
+What is Playwright ?
+Browser Automation Library for testing web applications across different browsers and platforms.
+=> Open Browser, Interact with Web Elements, Take Screenshots, Generate Reports, and more.
+
+Playwright with Pytest is a modern automation framework
+where Playwright handles cross-browser UI automation (multiple browsers)
+and Pytest provides test execution, fixtures, and reporting, enabling scalable and maintainable test frameworks.”
+
+Mix UI and API Test cases, Playwright
+Login -> API Test
+Add Product Carts -> UI Test
+Cart -> API Test
+Checkout -> UI Test
+
+
+1. What is Fixture in pytest?
