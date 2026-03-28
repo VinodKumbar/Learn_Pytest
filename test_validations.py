@@ -9,7 +9,6 @@ def pre_setup():
     print("Opening URL")
     return "Pass"
 
-
 def test_initial_check(pre_setup):
     print("This is First test")
     print("Passing Login Credentials")

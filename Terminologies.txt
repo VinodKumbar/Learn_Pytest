@@ -11,6 +11,7 @@ What is Playwright ?
 Browser Automation Library for testing web applications across different browsers and platforms.
 => Open Browser, Interact with Web Elements, Take Screenshots, Generate Reports, and more.
 
+Why Pytest and Playwright together?
 Playwright with Pytest is a modern automation framework
 where Playwright handles cross-browser UI automation (multiple browsers)
 and Pytest provides test execution, fixtures, and reporting, enabling scalable and maintainable test frameworks.”
