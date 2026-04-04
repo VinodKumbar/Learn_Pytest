@@ -47,7 +47,7 @@ pytest test_validation.py::test_initial_check
 pytest -s test_validation.py
 
 5. Run tests with a specific marker (e.g., `@pytest.mark.smoke`):
-pytest -m slow
+pytest -m smoke
 
 6. Run tests in parallel (requires `pytest-xdist`):
 pytest -n 4
