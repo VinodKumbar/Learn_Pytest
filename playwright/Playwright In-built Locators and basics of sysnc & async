@@ -1,0 +1,106 @@
+Recommended built in locators in Playwright are:
+
+Reference link :
+http://playwright.dev/python/docs/locators
+
+1. page.get_by_role()
+               it finds elements on webpage by their role
+               button, link, textbox, heading, checkbox, radio, etc
+
+2. page.get_by_lable()
+               it finds elements on webpage by their label
+               for example, if there is a text box with label "username",
+
+3. page.get_by_placeholder()
+               it finds elements on webpage by their placeholder text
+               for example, if there is a text box with placeholder "enter your name",
+
+4. page.get_by_alt_text()
+                it finds elements on webpage by their alt text
+                for example, if there is an image with alt text "company logo",
+
+5. page.get_by_title()
+                it finds elements on webpage by their title attribute
+                for example, if there is an element with title "submit button",
+
+6. page.get_by_test_id()
+                it finds elements on webpage by their data-testid attribute
+                for example, if there is an element with data-testid "login-button",
+
+  ******************************************************************************************
+Xpath and CSS selectors are also supported in Playwright,
+but the above locators are recommended for better readability and maintainability of test scripts.
+
+- Sample HTML code for reference:
+
+<div class = card, id = "card1">
+
+
+  Xpath Locator:
+
+  // -> search everywhere in the document ( DOM )
+   => take drone and look everywhere
+
+
+  / -> search from the root element
+    => go floor by floor and search for the element
+
+  tag names:
+ div -> search for div element
+ span -> search for span element
+ input -> search for input element
+
+ attribute:
+    id -> search for element with specific id
+    class -> search for element with specific class
+    name -> search for element with specific name
+    type -> search for element with specific type
+    value -> search for element with specific value
+    text() -> search for element with specific text content
+
+   xpath syntax:
+    //div[@id = "card1"]
+    // div [@class= "card"]
+    // div [@id = "card1" and @class = "card"]
+
+    xpath in playwright:
+    page.locator('//div[@id = "card1"]')
+    page.locator('//div[@class= "card"]')
+    page.locator('//div[@id = "card1" and @class = "card"]')
+
+CSS Selector:
+
+  tag name:
+    div -> search for div element
+    span -> search for span element
+    input -> search for input element
+
+  attribute:
+    id -> search for element with specific id
+    class -> search for element with specific class
+    name -> search for element with specific name
+    type -> search for element with specific type
+    value -> search for element with specific value
+    text() -> search for element with specific text content
+
+  css selector syntax:
+   #card1 -> search for element with id "card1"
+   .card -> search for element with class "card"
+   div#card1 -> search for div element with id "card1"
+   div.card -> search for div element with class "card"
+
+css selector in playwright:
+   page.locator('#card1')
+   page.locator('.card')
+   page.locator('div#card1')
+   page.locator('div.card')
+
+   contains in xpath
+    //div[contains(@class, "card")]
+
+contains in xpath
+-> checks if it includes the value in the attribute
+
+
+
+
