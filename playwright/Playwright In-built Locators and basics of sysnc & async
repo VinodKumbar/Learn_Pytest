@@ -3,6 +3,9 @@ Recommended built in locators in Playwright are:
 Reference link :
 http://playwright.dev/python/docs/locators
 
+Practice Login page with different locators:
+https://practicetestautomation.com/practice-test-login/
+
 1. page.get_by_role()
                it finds elements on webpage by their role
                button, link, textbox, heading, checkbox, radio, etc
