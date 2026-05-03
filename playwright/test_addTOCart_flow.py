@@ -41,6 +41,7 @@ def test_addToCart(page:Page):
 
 # Assignment -> Select Furniture from Drop-down
 # Select 2 Furniture Products
+# Increase the Product count
 # Proceed to Checkout
 
 
