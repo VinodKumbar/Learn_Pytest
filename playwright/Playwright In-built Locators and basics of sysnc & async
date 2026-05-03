@@ -66,8 +66,6 @@ but the above locators are recommended for better readability and maintainabilit
     // div [@class= "card"]
     // div [@id = "card1" and @class = "card"]
 
-    xpath in playwright:
-    page.locator('//div[@id = "card1"]')
     page.locator('//div[@class= "card"]')
     page.locator('//div[@id = "card1" and @class = "card"]')
 
