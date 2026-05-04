@@ -32,17 +32,30 @@ def test_addToCart(page:Page):
     expect(page.locator("#cartTable")).to_contain_text("MacBook Pro M3")
     expect(page.locator("#cartTable")).to_contain_text("Acer Predator")
 
-    page.get_by_role("button", name="Proceed to Checkout").is_enabled()
-
-    page.get_by_text("Proceed to Checkout").click()
-
     time.sleep(5)
-
+    page.get_by_role("button", name="Back").click()
 
 # Assignment -> Select Furniture from Drop-down
 # Select 2 Furniture Products
 # Increase the Product count
 # Proceed to Checkout
+
+    page.locator("#categoryFilter").select_option("Furniture")
+
+    products = ["Modern Sofa Set", "Bookshelf Wall"]
+
+    for product in products:
+                 product_card = page.locator(".card").filter(has_text=product)
+                 product_card.locator("input[type='number']").fill("3")
+                 product_card.get_by_role("button", name="Add").click()
+
+    page.get_by_text("View Cart").scroll_into_view_if_needed()
+    page.get_by_text("View Cart").click()
+
+    page.wait_for_timeout(5000)
+
+    page.get_by_role("button", name="Proceed to Checkout").is_enabled()
+    page.get_by_text("Proceed to Checkout").click()
 
 
 
